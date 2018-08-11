@@ -2,6 +2,8 @@
 <%= button_to 'Create post', new_post_path, method: :get %>
 
 <% @posts.sort_by { |post| post.created_at }.each do |post|%>
-  <h2><%= post.title %></h2>
+  <h2 class="post-title"><%= post.title %></h2>
+  <p><%= post.created_at %></p>
   <p><%= post.content %></p>
+
 <% end %>
