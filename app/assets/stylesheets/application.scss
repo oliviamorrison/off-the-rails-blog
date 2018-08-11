@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face{
+  font-family: "CallingCode-Regular";
+  src: asset-url('fonts/CallingCode-Regular.otf') format("opentype");
+}
+
+ body{
+   background-color: #f3e4e9;
+   font-family: helvetica, sans-serif;
+ }
+
+ h1{
+   color: #314882;
+   text-align: center;
+   font-size: 3em;
+ }
+
+
+ .create-button {
+   border-radius: 25px;
+   font-size: 16px;
+   border: none;
+   padding: 15px 32px;
+   background-color: #ec297b;
+   color: #fff;
+   text-align: center;
+   font-family: "CallingCode-Regular";
+ }
+
+ .create-button:hover {
+   background-color: #ba1f60;
+ }
+
+ .logo{
+   width: 300px;
+   margin-left: 30px;
+   margin-top: 20px;
+ }
+
+ .label{
+   color: #ec297b;
+   margin-bottom: 10px;
+   font-family: "CallingCode-Regular";
+    width: 100%;
+     margin-bottom: 10px;
+ }

@@ -1,4 +1,5 @@
-<%= form_with(model: post, local: true) do |form| %>
+<%= image_tag "v3.png", class: "logo"%>
+<%= form_with(model: post, local: true, class:"form") do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -12,16 +13,16 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <div class="label"><%= form.label :title%></div>
+    <%= form.text_field :title, class: "title"%>
   </div>
 
   <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
+    <div class="label"><%= form.label :content %></div>
+    <%= form.text_area :content, class: "content" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="button-container">
+    <%= submit_tag "Create", class: "create-button"%>
   </div>
 <% end %>

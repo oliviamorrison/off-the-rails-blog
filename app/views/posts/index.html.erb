@@ -1,9 +1,11 @@
-<h1>Off The Rails</h1>
-<%= button_to 'Create post', new_post_path, method: :get %>
+<!-- <h1>Off The Rails</h1> -->
+<%= image_tag "v3.png", class: "logo"%>
 
-<% @posts.sort_by { |post| post.created_at }.each do |post|%>
+<div class= "button-container"><%= button_to 'Create', new_post_path, method: :get, class: "create-button" %></div>
+
+<% @posts.sort_by { |post| post.created_at }.reverse.each do |post|%>
   <div id= "post">
-    <h2 class="post-title"><%= post.title %></h2>
+    <h2 class="label"><%= post.title %></h2>
     <p class ="post-date"><%= post.created_at %></p>
     <p class ="post-content"><%= post.content %></p>
   </div>
