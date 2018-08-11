@@ -6,7 +6,7 @@
 <% @posts.sort_by { |post| post.created_at }.reverse.each do |post|%>
   <div id= "post">
     <h2 class="label"><%= post.title %></h2>
-    <p class ="post-date"><%= post.created_at %></p>
+    <p class ="post-date"><%= post.created_at.strftime("Posted at %H:%M%p on %e %B %Y") %></p>
     <p class ="post-content"><%= post.content %></p>
   </div>
 
