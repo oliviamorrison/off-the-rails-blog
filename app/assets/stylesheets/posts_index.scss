@@ -21,3 +21,19 @@
   width:110px;
   margin: auto;
 }
+
+.delete-button {
+  border-radius: 25px;
+  font-size: 12px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #ec297b;
+  color: #fff;
+  text-align: center;
+  font-family: "CallingCode-Regular";
+  text-decoration: none;
+}
+
+.delete-button:hover {
+  background-color: #ba1f60;
+}
